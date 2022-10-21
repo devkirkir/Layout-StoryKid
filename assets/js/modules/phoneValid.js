@@ -49,6 +49,7 @@ const phoneValid = () => {
   bindInput("input[name=enroll-phone]");
   bindInput("input[name=banner-enroll-phone]");
   bindInput("input[name=consulting-phone]");
+  bindInput("input[name=second-consulting-phone]");
 };
 
 export default phoneValid;
