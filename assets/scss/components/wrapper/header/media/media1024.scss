@@ -1,0 +1,29 @@
+@media screen and (max-width: 1024px) {
+  header {
+    .header-bottom {
+      justify-content: space-between;
+      .navigation-container {
+        display: none;
+      }
+
+      .contacts-container {
+        .phone-container {
+          margin-right: 15px;
+
+          .link-phone {
+            font-size: 20px;
+          }
+        }
+
+        .link-vk,
+        .link-tg {
+          margin-right: 15px;
+        }
+
+        .burger {
+          display: flex;
+        }
+      }
+    }
+  }
+}

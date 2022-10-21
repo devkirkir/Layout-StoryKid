@@ -1,0 +1,42 @@
+@media screen and (max-width: 1030px) {
+  .banner-slider {
+    height: 400px;
+    border-radius: 30px;
+
+    .banner-slides {
+      .banner-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .slide-info {
+          text-align: center;
+          top: auto;
+          left: auto;
+
+          &-title {
+            font-size: 46px;
+            font-weight: 700;
+          }
+
+          &-paragraph {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .banner-slider-controll {
+      width: 100%;
+      left: 0;
+      bottom: 20px;
+      justify-content: space-between;
+      padding: 0 30px;
+
+      button {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}

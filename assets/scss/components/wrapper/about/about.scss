@@ -1,0 +1,36 @@
+.about {
+  @include section(80px);
+
+  .section-title {
+    font-size: 32px;
+    color: $lavanda;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    color: $darkblue;
+    margin-bottom: 30px;
+  }
+
+  .about-mission {
+    color: $red;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .about-list {
+    margin-left: 20px;
+
+    .list-elem {
+      color: $darkblue;
+      font-weight: 500;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@import "media/media560.scss";

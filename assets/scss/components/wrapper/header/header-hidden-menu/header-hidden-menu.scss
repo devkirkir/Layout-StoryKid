@@ -1,0 +1,92 @@
+.header-hidden-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $lavanda09;
+  padding: 30px 30px 20px 60px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 10;
+
+  .hidden-menu-close-btn {
+    @include closeBtn;
+    margin-bottom: 20px;
+  }
+
+  .hidden-navigation {
+    .hidden-navigation-list {
+      .hidden-navigation-elem {
+        text-align: right;
+        list-style: none;
+        margin-bottom: 25px;
+
+        .hidden-navigation-link {
+          text-decoration: none;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: color 0.3s linear;
+
+          &:hover {
+            color: $lavandaActive;
+          }
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    margin-bottom: 30px;
+  }
+
+  .hidden-btn-enroll {
+    @include btn($darkblue, 12px, #fff, #eee, #b9b9b9);
+    margin-bottom: 10px;
+  }
+
+  .hidden-phone-container {
+    @include phone(#fff, 500, #fff, #eee, #b9b9b9, false);
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .hidden-socials {
+    .link {
+      text-decoration: none;
+    }
+
+    .link-vk,
+    .link-tg {
+      svg {
+        path {
+          fill: #fff;
+          transition: 0.3s fill linear;
+        }
+      }
+
+      &:hover svg path {
+        fill: #eee;
+      }
+
+      &:active svg path {
+        fill: #b9b9b9;
+      }
+    }
+
+    .link-vk {
+      margin-right: 15px;
+    }
+  }
+}
+
+.header-hidden-menu-active {
+  opacity: 1;
+  transform: translate(0);
+}

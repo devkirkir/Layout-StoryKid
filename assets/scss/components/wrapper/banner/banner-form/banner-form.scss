@@ -1,0 +1,50 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+  background-color: $lavanda;
+  border-radius: 0 30px 30px 0;
+  padding: 20px;
+
+  .banner-form-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .banner-form-paragraph {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .banner-form {
+    input {
+      @include input;
+      width: 100%;
+      outline-color: $red;
+    }
+
+    .input-email {
+      margin-bottom: 0;
+    }
+
+    .input-submit {
+      @include btn(#fff, 16px, $red, $redHover, $redActive);
+      text-transform: uppercase;
+    }
+
+    .checkbox-container {
+      @include checkbox(true);
+
+      .agree {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@import "media/media1030.scss";

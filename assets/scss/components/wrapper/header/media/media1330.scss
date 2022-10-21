@@ -1,0 +1,50 @@
+@media screen and (max-width: 1330px) {
+  header {
+    .header-bottom {
+      .navigation-container {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        margin: 0 30px;
+
+        .navigation {
+          .navigation-list {
+            .navigation-elem {
+              margin-right: 14px;
+
+              .navigation-link {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .contacts-container {
+        .phone-container {
+          margin-right: 10px;
+
+          .link-phone {
+            font-size: 20px;
+          }
+        }
+
+        .link-vk {
+          margin-right: 10px;
+        }
+
+        .link-tg {
+          margin-right: 0;
+        }
+      }
+
+      .dropdown {
+        top: 80px;
+      }
+
+      .btn-enroll {
+        display: none;
+      }
+    }
+  }
+}

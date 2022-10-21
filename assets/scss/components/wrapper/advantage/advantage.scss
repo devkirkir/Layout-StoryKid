@@ -1,0 +1,94 @@
+.advantage {
+  @include section(80px);
+
+  .section-title {
+    font-size: 32px;
+    color: $lavanda;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    color: $darkblue;
+    margin-bottom: 30px;
+  }
+
+  .advantage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .adv {
+      display: flex;
+      align-items: center;
+      min-width: 30%;
+      height: 70px;
+      flex: 1;
+      margin: 20px;
+
+      .icon {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        border-radius: 10px;
+        margin: 0 15px 0 15px;
+      }
+
+      .title {
+        width: 100%;
+        color: $darkblue;
+        font-weight: 700;
+      }
+
+      &:nth-child(1) {
+        .icon {
+          background-color: $orange;
+          background-image: url("../img/advantage/hat.svg");
+        }
+      }
+
+      &:nth-child(2) {
+        .icon {
+          background-color: $pink;
+          background-image: url("../img/advantage/dice.svg");
+          background-size: 50%;
+        }
+      }
+
+      &:nth-child(3) {
+        .icon {
+          background-color: $lavanda;
+          background-image: url("../img/advantage/heart.svg");
+          background-size: 50%;
+        }
+      }
+
+      &:nth-child(4) {
+        .icon {
+          background-color: $lightblue;
+          background-image: url("../img/advantage/list.svg");
+          background-size: 40%;
+        }
+      }
+
+      &:nth-child(5) {
+        .icon {
+          background-color: $orange;
+          background-image: url("../img/advantage/mic.svg");
+          background-size: 40%;
+        }
+      }
+
+      &:nth-child(6) {
+        .icon {
+          background-color: $pink;
+          background-image: url("../img/advantage/comm.svg");
+        }
+      }
+    }
+  }
+}
+
+@import "media/media560.scss";

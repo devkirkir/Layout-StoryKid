@@ -1,0 +1,38 @@
+.success-message,
+.error-message {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #fff;
+  font-weight: 700;
+  background-color: transparent;
+  text-align: center;
+  opacity: 0;
+  z-index: 11;
+  transition: 0.3 linear;
+
+  .close-status {
+    @include closeBtn;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: rotate(0);
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  &__subtext {
+    font-size: 14px;
+  }
+}

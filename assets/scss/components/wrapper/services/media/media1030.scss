@@ -1,0 +1,11 @@
+@media screen and (max-width: 1030px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, 230px);
+
+    .service {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

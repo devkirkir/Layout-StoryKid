@@ -1,0 +1,12 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 430px));
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  @include section(80px);
+
+  @import "service/service.scss";
+}
+
+@import "media/media1030.scss";
+@import "media/media576.scss";

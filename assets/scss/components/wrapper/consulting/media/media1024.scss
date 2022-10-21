@@ -1,0 +1,51 @@
+@media screen and (max-width: 1024px) {
+  .consulting-first,
+  .consulting-second {
+    width: 100%;
+    border-radius: 30px;
+
+    .consulting-content {
+      position: relative;
+      max-width: $maxWidth;
+      padding: 60px 20px;
+      margin: 0 auto;
+
+      .content-left {
+        width: 300px;
+
+        .title {
+          text-align: center;
+        }
+
+        .paragraph {
+          text-align: center;
+        }
+
+        .consulting-form {
+          .consulting-phone {
+            display: block;
+          }
+        }
+      }
+
+      .image-holder {
+        right: 30px;
+        width: 309px;
+        height: 474px;
+      }
+
+      .bg-holder {
+        right: -185px;
+        bottom: -220px;
+        width: 815px;
+        height: 833px;
+      }
+    }
+  }
+
+  .consulting-second .consulting-content .image-holder {
+    right: 30px;
+    width: 366px;
+    height: 474px;
+  }
+}

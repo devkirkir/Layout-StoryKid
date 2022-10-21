@@ -1,0 +1,56 @@
+.modal-enroll {
+  @include modal;
+  transform: translateY(-100%);
+
+  .modal-content {
+    width: 420px;
+
+    .modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .modal-header {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: default;
+      }
+
+      .enroll-close-btn {
+        @include closeBtn;
+      }
+    }
+
+    .modal-bottom {
+      width: 100%;
+      background-color: $lavanda;
+      padding: 20px;
+      border-radius: 10px;
+
+      .modal-title {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+      }
+
+      .modal-paragraph {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      @import "modal-form/modal-form.scss";
+    }
+  }
+}
+
+.modal-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@import "media/media576.scss";

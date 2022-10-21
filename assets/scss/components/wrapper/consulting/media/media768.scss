@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .consulting-first,
+  .consulting-second {
+    .consulting-content {
+      padding: 40px 10px;
+      .content-left {
+        width: 100%;
+
+        .title {
+          font-size: 24px;
+        }
+
+        .paragraph {
+          font-size: 14px;
+        }
+
+        .consulting-form {
+          .consulting-phone {
+            width: 100%;
+          }
+
+          .consulting-submit {
+            width: 100%;
+          }
+
+          .checkbox-container {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .image-holder {
+        display: none;
+      }
+
+      .bg-holder {
+        display: none;
+      }
+    }
+  }
+}

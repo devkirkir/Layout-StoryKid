@@ -1,0 +1,12 @@
+@media screen and (max-width: 1350px) {
+  .consulting-first,
+  .consulting-second {
+    .consulting-content {
+      .content-left {
+        position: relative;
+        width: 620px;
+        z-index: 3;
+      }
+    }
+  }
+}

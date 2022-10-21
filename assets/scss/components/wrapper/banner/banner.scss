@@ -1,0 +1,10 @@
+.banner {
+  display: flex;
+  max-width: 1800px;
+  max-height: 558px;
+  min-width: $minWidth;
+  margin: 15px auto;
+
+  @import "slider/slider.scss";
+  @import "banner-form/banner-form.scss";
+}

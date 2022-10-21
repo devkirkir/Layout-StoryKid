@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+  header {
+    margin-top: 15px;
+    .header-bottom {
+      flex-wrap: wrap;
+
+      .btn-enroll {
+        display: block;
+        min-width: 100%;
+        flex: 1;
+        background-color: $red;
+        margin: 10px 0;
+
+        &:hover {
+          background-color: $redHover;
+        }
+
+        &:active {
+          background-color: $redActive;
+        }
+      }
+    }
+  }
+}

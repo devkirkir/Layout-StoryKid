@@ -1,0 +1,33 @@
+@media screen and (max-width: 560px) {
+  .advantage {
+    padding: 0 10px;
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+    }
+
+    .advantage-container {
+      justify-content: flex-start;
+
+      .adv {
+        flex-direction: column;
+        min-width: 40%;
+        height: 150px;
+        margin: 0 10px 0;
+
+        .icon {
+          margin: 0 0 15px 0;
+        }
+
+        .title {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

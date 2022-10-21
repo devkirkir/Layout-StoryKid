@@ -1,0 +1,13 @@
+@media screen and (max-width: 576px) {
+  .modal-enroll {
+    .modal-content {
+      max-width: 420px;
+
+      .modal-bottom {
+        .modal-title {
+          display: none;
+        }
+      }
+    }
+  }
+}

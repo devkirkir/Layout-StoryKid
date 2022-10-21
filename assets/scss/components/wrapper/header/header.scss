@@ -1,0 +1,71 @@
+header {
+  @include section(0px);
+  padding: 10px 15px;
+
+  .header-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 6px;
+
+    span {
+      color: $red;
+      font-size: 12px;
+      font-weight: 700;
+      font-style: normal;
+      margin-right: 20px;
+      cursor: default;
+
+      .blue {
+        color: $lightblue;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .header-bottom {
+    display: flex;
+    align-items: center;
+
+    .logo-container {
+      img {
+        width: 130px;
+      }
+    }
+
+    @import "navigation-container/navigation-container.scss";
+
+    .burger {
+      height: 18px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      .line {
+        width: 20px;
+        height: 2px;
+        background-color: $darkblue;
+        border-radius: 2px;
+      }
+    }
+
+    @import "contacts-container/contacts-container.scss";
+
+    .btn-enroll {
+      @include btn(#fff, 12px, $lavanda, $lavandaHover, $lavandaActive);
+    }
+  }
+
+  @import "header-dropdown/header-dropdown.scss";
+  @import "header-hidden-menu/header-hidden-menu.scss";
+}
+
+@import "media/media1330.scss";
+@import "media/media1024.scss";
+@import "media/media576.scss";
+@import "media/media460.scss";

@@ -1,0 +1,131 @@
+.extra-service {
+  // max-width: $maxWidth;
+  // min-width: $minWidth;
+  // padding: 0 20px;
+  // margin: 60px auto;
+  @include section(80px);
+
+  .section-title {
+    font-size: 32px;
+    color: $lavanda;
+    margin-bottom: 30px;
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .service {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      min-width: 260px;
+      height: 100px;
+      background-color: $peach;
+      margin: 10px;
+      border-radius: 10px;
+
+      .icon {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        border-radius: 10px;
+        margin: 0 10px 0 15px;
+      }
+
+      .title {
+        width: 100%;
+        text-align: center;
+        color: $darkblue;
+      }
+
+      &:nth-child(1) {
+        background-color: $peach;
+
+        .icon {
+          background-image: url("../img/extra-service/yoga.svg");
+        }
+      }
+
+      &:nth-child(2) {
+        flex: 2;
+
+        .icon {
+          background-image: url("../img/extra-service/wood.svg");
+        }
+      }
+
+      &:nth-child(3) {
+        .icon {
+          background-image: url("../img/extra-service/golf.svg");
+        }
+      }
+
+      &:nth-child(4) {
+        .icon {
+          background-image: url("../img/extra-service/bike.svg");
+          background-size: 70%;
+        }
+      }
+
+      &:nth-child(5) {
+        .icon {
+          background-image: url("../img/extra-service/lego.svg");
+        }
+      }
+
+      &:nth-child(6) {
+        .icon {
+          background-image: url("../img/extra-service/plastic.svg");
+        }
+      }
+
+      &:nth-child(7) {
+        flex: 2;
+
+        .icon {
+          background-image: url("../img/extra-service/rhetoric.svg");
+          background-size: 50%;
+        }
+      }
+
+      &:nth-child(8) {
+        flex: 2;
+
+        .icon {
+          background-image: url("../img/extra-service/rock.svg");
+        }
+      }
+
+      &:nth-child(9) {
+        .icon {
+          background-image: url("../img/extra-service/theatro.svg");
+          background-size: 50%;
+        }
+      }
+
+      &:nth-child(10) {
+        .icon {
+          background-image: url("../img/extra-service/cook.svg");
+          background-size: 70%;
+        }
+      }
+
+      &:nth-child(11) {
+        flex: 2;
+
+        .icon {
+          background-image: url("../img/extra-service/sand.svg");
+        }
+      }
+    }
+  }
+}
+
+@import "media/media768.scss";
+@import "media/media560.scss";

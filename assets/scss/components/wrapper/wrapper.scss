@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 1800px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @import "header/header.scss";
+  @import "banner/banner.scss";
+  @import "services/services.scss";
+  @import "consulting/consulting.scss";
+  @import "extra-service/extra-service.scss";
+  @import "advantage/advantage.scss";
+  @import "about/about.scss";
+  @import "map/map.scss";
+  @import "footer/footer.scss";
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}

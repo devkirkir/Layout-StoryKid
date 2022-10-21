@@ -1,0 +1,44 @@
+.header-dropdown {
+  display: none;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  background-color: $lavanda;
+  padding: 20px 0;
+  z-index: 5;
+
+  .dropdown-content {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .dropdown-navigation {
+      .dropdown-list {
+        display: flex;
+        justify-content: space-between;
+
+        .dropdown-elem {
+          list-style: none;
+          margin: 5px;
+
+          .dropdown-link {
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.2s linear;
+
+            &:hover {
+              color: $lavandaActive;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-navigation-dropdown-active {
+  display: block;
+}

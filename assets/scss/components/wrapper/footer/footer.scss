@@ -1,0 +1,75 @@
+.footer {
+  @include section(80px);
+  display: flex;
+
+  .footer-left {
+    flex: 1;
+
+    .logo-container {
+      margin-bottom: 10px;
+    }
+
+    .phone-container {
+      @include phone($darkblue, 700, $red, $redHover, $redActive, true);
+
+      .link-phone::after {
+        content: "";
+      }
+
+      margin-bottom: 10px;
+    }
+
+    .address {
+      margin-bottom: 10px;
+      span {
+        color: $darkblue;
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+
+        .blue {
+          color: $lightblue;
+          display: inline;
+        }
+      }
+    }
+
+    .link {
+      text-decoration: none;
+      margin-right: 10px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+
+    .link-block {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+
+      .label {
+        font-weight: 700;
+        color: $darkblue;
+        text-decoration: none;
+        margin-bottom: 15px;
+      }
+
+      .link {
+        color: $darkblue;
+        text-decoration: none;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@import "media/media1200.scss";
+@import "media/media768.scss";
+@import "media/media560.scss";

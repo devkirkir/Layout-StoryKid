@@ -1,0 +1,30 @@
+.contacts-container {
+  display: flex;
+  align-items: center;
+
+  .link {
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  .phone-container {
+    @include phone($darkblue, 700, $red, $redHover, $redActive, true);
+  }
+
+  .link-vk,
+  .link-tg {
+    svg {
+      path {
+        transition: 0.3s fill linear;
+      }
+    }
+
+    &:hover svg path {
+      fill: $redHover;
+    }
+
+    &:active svg path {
+      fill: $redActive;
+    }
+  }
+}

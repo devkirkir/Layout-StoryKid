@@ -1,0 +1,24 @@
+.modal-form {
+  input {
+    @include input;
+    width: 100%;
+    outline-color: $red;
+  }
+
+  .input-email {
+    margin-bottom: 0;
+  }
+
+  .input-submit {
+    @include btn(#fff, 16px, $red, $redHover, $redActive);
+    text-transform: uppercase;
+  }
+
+  .checkbox-container {
+    @include checkbox(true);
+
+    .agree {
+      color: #fff;
+    }
+  }
+}

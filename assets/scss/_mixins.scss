@@ -1,0 +1,233 @@
+@mixin section($margin) {
+  max-width: $maxWidth;
+  min-width: $minWidth;
+  padding: 0 15px;
+  margin: $margin auto;
+}
+
+@mixin btn($color, $fs, $bg, $hover, $active) {
+  font-size: $fs;
+  color: $color;
+  font-weight: 700;
+  background-color: $bg;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s background linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
+@mixin phone($color, $fw, $labelColor, $labelHover, $labelActive, $isIcon) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+
+  .link-phone {
+    position: relative;
+    font-size: 22px;
+    color: $color;
+    font-weight: $fw;
+    text-decoration: none;
+
+    @if $isIcon == true {
+      &::before {
+        content: url("../img/icon_phone.svg");
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      content: "Заказать обратный звонок";
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      color: $labelColor;
+      transition: 0.3s color linear;
+    }
+
+    &:hover::after {
+      color: $labelHover;
+    }
+
+    &:active::after {
+      color: $labelActive;
+    }
+  }
+}
+
+@mixin closeBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+@mixin modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px;
+  margin: auto;
+  opacity: 0;
+  transition: 0.2s linear;
+  z-index: 10;
+}
+
+@mixin input {
+  color: $darkblue;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+@mixin checkbox($isWhite) {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 15px 5px;
+
+  .checkbox {
+    position: relative;
+    margin-right: 10px;
+
+    .custom-checkbox {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #adb5bd;
+        border-radius: 5px;
+      }
+    }
+
+    .input-checkbox {
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      z-index: 4;
+      cursor: pointer;
+
+      &:hover + .custom-checkbox::before {
+        background-color: $darkblue;
+      }
+
+      &:checked + .custom-checkbox::before {
+        @if $isWhite {
+          background-image: url("../img/checkbox_icon_light.svg");
+        } @else {
+          background-image: url("../img/checkbox_icon_dark.svg");
+        }
+      }
+    }
+  }
+
+  .agree {
+    font-size: 14px;
+    cursor: default;
+  }
+}
+
+@mixin consult($textcolor, $bgcolor, $img, $bgimg, $isWhite) {
+  width: 100%;
+  background-color: $bgcolor;
+  border-radius: 30px;
+
+  .consulting-content {
+    position: relative;
+    max-width: $maxWidth;
+    min-width: 200px;
+    padding: 60px 20px;
+    margin: 0 auto;
+
+    .content-left {
+      width: 700px;
+      color: $textcolor;
+
+      .title {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .paragraph {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      .consulting-form {
+        .consulting-phone {
+          @include input;
+          outline-color: $red;
+          width: 300px;
+        }
+
+        .consulting-submit {
+          @include btn($darkblue, 16px, $orange, $orangeHover, $orangeActive);
+          width: 300px;
+          text-transform: uppercase;
+        }
+
+        .checkbox-container {
+          @include checkbox($isWhite);
+          margin-bottom: 0;
+
+          .agree {
+            color: $textcolor;
+          }
+        }
+      }
+    }
+
+    .image-holder {
+      position: absolute;
+      right: 110px;
+      bottom: 0;
+      width: 260px;
+      height: 390px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url($img);
+      z-index: 2;
+    }
+
+    .bg-holder {
+      position: absolute;
+      right: -120px;
+      bottom: -220px;
+      width: 780px;
+      height: 780px;
+      z-index: 1;
+      background-size: contain;
+      background-image: url($bgimg);
+    }
+  }
+}

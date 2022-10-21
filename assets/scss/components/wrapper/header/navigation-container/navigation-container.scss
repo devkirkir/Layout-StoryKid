@@ -1,0 +1,63 @@
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0 30px;
+
+  .navigation {
+    .navigation-list {
+      .navigation-elem {
+        display: inline-block;
+        margin-right: 18px;
+
+        .navigation-link {
+          font-size: 14px;
+          font-weight: 500;
+          color: $darkblue;
+          text-decoration: none;
+          transition: color 0.3s linear;
+
+          &:hover {
+            color: $redHover;
+          }
+
+          &:active {
+            color: $redActive;
+          }
+        }
+
+        .nav-about,
+        .nav-schedule,
+        .nav-program {
+          &::after {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            transform: rotate(45deg);
+            border-right: 1px solid $darkblue;
+            border-bottom: 1px solid $darkblue;
+            margin: 0 auto;
+            transition: transform 0.3s;
+          }
+
+          &:hover::after {
+            transform: translateY(3px) rotate(45deg);
+          }
+        }
+
+        .nav-active {
+          color: $red;
+
+          &::after {
+            border-color: $red;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

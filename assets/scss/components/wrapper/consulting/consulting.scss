@@ -1,0 +1,28 @@
+.consulting-first {
+  @include consult(#fff, $lavanda, "../img/consulting-image/consult-kid.png", "../img/consulting-image/bg.svg", true);
+}
+
+.consulting-second {
+  @include consult(
+    $darkblue,
+    $peach,
+    "../img/consulting-image/consult-kid-second.png",
+    "../img/consulting-image/bg-second.svg",
+    false
+  );
+
+  .consulting-content {
+    .image-holder {
+      width: 303px;
+      height: 391px;
+    }
+
+    .bg-holder {
+      bottom: -229px;
+    }
+  }
+}
+
+@import "media/media1350.scss";
+@import "media/media1024.scss";
+@import "media/media768.scss";
