@@ -4,12 +4,16 @@
   margin: 0 auto;
 
   @import "header/header.scss";
-  @import "banner/banner.scss";
-  @import "services/services.scss";
-  @import "consulting/consulting.scss";
-  @import "extra-service/extra-service.scss";
-  @import "advantage/advantage.scss";
-  @import "about/about.scss";
+
+  main {
+    @import "banner/banner.scss";
+    @import "services/services.scss";
+    @import "consulting/consulting.scss";
+    @import "extra-service/extra-service.scss";
+    @import "advantage/advantage.scss";
+    @import "about/about.scss";
+  }
+
   @import "map/map.scss";
   @import "footer/footer.scss";
 }

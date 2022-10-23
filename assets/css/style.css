@@ -424,26 +424,26 @@ body .wrapper header .header-bottom .contacts-container .link-tg {
     background-color: #af3d2e;
   }
 }
-body .wrapper .banner {
+body .wrapper main .banner {
   display: flex;
   max-width: 1800px;
   max-height: 558px;
   min-width: 280px;
   margin: 15px auto;
 }
-body .wrapper .banner .banner-slider {
+body .wrapper main .banner .banner-slider {
   position: relative;
   overflow: hidden;
   flex: 1;
   border-radius: 30px 0 0 30px;
 }
-body .wrapper .banner .banner-slider .banner-slides {
+body .wrapper main .banner .banner-slider .banner-slides {
   display: flex;
   width: 100%;
   height: 100%;
   transition: 0.3s;
 }
-body .wrapper .banner .banner-slider .banner-slides .banner-slide {
+body .wrapper main .banner .banner-slider .banner-slides .banner-slide {
   position: relative;
   display: flex;
   align-items: center;
@@ -452,34 +452,37 @@ body .wrapper .banner .banner-slider .banner-slides .banner-slide {
   height: 100%;
   transition: transform 0.3s linear;
 }
-body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info {
+body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info {
   position: absolute;
   left: 70px;
+  text-align: center;
   color: #fff;
-  background-color: #8081bd;
+  background-color: rgba(128, 129, 189, 0.7);
   border-radius: 30px;
   padding: 20px;
   margin: 0 10px;
 }
-body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info-title {
+body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info-title {
+  line-height: 0.78;
   font-size: 76px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
-body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info-paragraph {
+body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info-paragraph {
   font-size: 22px;
 }
-body .wrapper .banner .banner-slider .banner-slides .banner-slide img {
+body .wrapper main .banner .banner-slider .banner-slides .banner-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-body .wrapper .banner .banner-slider .banner-slider-controll {
+body .wrapper main .banner .banner-slider .banner-slider-controll {
   position: absolute;
   display: flex;
   bottom: 50px;
   left: 70px;
 }
-body .wrapper .banner .banner-slider .banner-slider-controll button {
+body .wrapper main .banner .banner-slider .banner-slider-controll button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,48 +494,48 @@ body .wrapper .banner .banner-slider .banner-slider-controll button {
   margin-right: 20px;
   cursor: pointer;
 }
-body .wrapper .banner .banner-slider .banner-slider-controll button:hover {
+body .wrapper main .banner .banner-slider .banner-slider-controll button:hover {
   background-color: #fff;
   border-color: #fff;
 }
-body .wrapper .banner .banner-slider .banner-slider-controll button:last-child {
+body .wrapper main .banner .banner-slider .banner-slider-controll button:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1030px) {
-  body .wrapper .banner .banner-slider {
+  body .wrapper main .banner .banner-slider {
     height: 400px;
     border-radius: 30px;
   }
-  body .wrapper .banner .banner-slider .banner-slides .banner-slide {
+  body .wrapper main .banner .banner-slider .banner-slides .banner-slide {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info {
+  body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info {
     text-align: center;
     top: auto;
     left: auto;
   }
-  body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info-title {
+  body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info-title {
     font-size: 46px;
     font-weight: 700;
   }
-  body .wrapper .banner .banner-slider .banner-slides .banner-slide .slide-info-paragraph {
+  body .wrapper main .banner .banner-slider .banner-slides .banner-slide .slide-info-paragraph {
     font-size: 18px;
   }
-  body .wrapper .banner .banner-slider .banner-slider-controll {
+  body .wrapper main .banner .banner-slider .banner-slider-controll {
     width: 100%;
     left: 0;
     bottom: 20px;
     justify-content: space-between;
     padding: 0 30px;
   }
-  body .wrapper .banner .banner-slider .banner-slider-controll button {
+  body .wrapper main .banner .banner-slider .banner-slider-controll button {
     border: none;
     background-color: rgba(255, 255, 255, 0.6);
   }
 }
-body .wrapper .banner .form-container {
+body .wrapper main .banner .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -541,19 +544,19 @@ body .wrapper .banner .form-container {
   border-radius: 0 30px 30px 0;
   padding: 20px;
 }
-body .wrapper .banner .form-container .banner-form-title {
+body .wrapper main .banner .form-container .banner-form-title {
   color: #fff;
   font-size: 32px;
   font-weight: 700;
   line-height: 35px;
   margin-bottom: 20px;
 }
-body .wrapper .banner .form-container .banner-form-paragraph {
+body .wrapper main .banner .form-container .banner-form-paragraph {
   color: #fff;
   font-size: 14px;
   margin-bottom: 20px;
 }
-body .wrapper .banner .form-container .banner-form input {
+body .wrapper main .banner .form-container .banner-form input {
   color: #334155;
   font-weight: 500;
   border-radius: 50px;
@@ -563,10 +566,10 @@ body .wrapper .banner .form-container .banner-form input {
   width: 100%;
   outline-color: #ea5d4a;
 }
-body .wrapper .banner .form-container .banner-form .input-email {
+body .wrapper main .banner .form-container .banner-form .input-email {
   margin-bottom: 0;
 }
-body .wrapper .banner .form-container .banner-form .input-submit {
+body .wrapper main .banner .form-container .banner-form .input-submit {
   font-size: 16px;
   color: #fff;
   font-weight: 700;
@@ -578,22 +581,22 @@ body .wrapper .banner .form-container .banner-form .input-submit {
   cursor: pointer;
   text-transform: uppercase;
 }
-body .wrapper .banner .form-container .banner-form .input-submit:hover {
+body .wrapper main .banner .form-container .banner-form .input-submit:hover {
   background-color: #d44c3a;
 }
-body .wrapper .banner .form-container .banner-form .input-submit:active {
+body .wrapper main .banner .form-container .banner-form .input-submit:active {
   background-color: #af3d2e;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container {
+body .wrapper main .banner .form-container .banner-form .checkbox-container {
   display: flex;
   align-items: center;
   margin: 15px 0 15px 5px;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox {
   position: relative;
   margin-right: 10px;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox .custom-checkbox::before {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox .custom-checkbox::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -604,7 +607,7 @@ body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox
   border: 1px solid #adb5bd;
   border-radius: 5px;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox {
   position: absolute;
   left: 0;
   width: 20px;
@@ -613,25 +616,25 @@ body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox
   z-index: 4;
   cursor: pointer;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
   background-color: #334155;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
   background-image: url("../img/checkbox_icon_light.svg");
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .agree {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .agree {
   font-size: 14px;
   cursor: default;
 }
-body .wrapper .banner .form-container .banner-form .checkbox-container .agree {
+body .wrapper main .banner .form-container .banner-form .checkbox-container .agree {
   color: #fff;
 }
 @media screen and (max-width: 1030px) {
-  body .wrapper .banner .form-container {
+  body .wrapper main .banner .form-container {
     display: none;
   }
 }
-body .wrapper .services {
+body .wrapper main .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 430px));
   grid-gap: 20px;
@@ -641,66 +644,66 @@ body .wrapper .services {
   padding: 0 15px;
   margin: 80px auto;
 }
-body .wrapper .services .service {
+body .wrapper main .services .service {
   display: flex;
   align-items: center;
 }
-body .wrapper .services .service img {
+body .wrapper main .services .service img {
   margin-right: 15px;
 }
-body .wrapper .services .service span {
+body .wrapper main .services .service span {
   color: #334155;
 }
 @media screen and (max-width: 1030px) {
-  body .wrapper .services {
+  body .wrapper main .services {
     grid-template-columns: repeat(auto-fit, 230px);
   }
-  body .wrapper .services .service span {
+  body .wrapper main .services .service span {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 576px) {
-  body .wrapper .services {
+  body .wrapper main .services {
     grid-template-columns: repeat(auto-fit, 110px);
   }
-  body .wrapper .services .service {
+  body .wrapper main .services .service {
     flex-direction: column;
   }
-  body .wrapper .services .service img {
+  body .wrapper main .services .service img {
     width: 50px;
     margin-right: 0;
     margin-bottom: 10px;
   }
-  body .wrapper .services .service span {
+  body .wrapper main .services .service span {
     text-align: center;
     font-size: 12px;
   }
 }
-body .wrapper .consulting-first {
+body .wrapper main .consulting-first {
   width: 100%;
   background-color: #8081bd;
   border-radius: 30px;
 }
-body .wrapper .consulting-first .consulting-content {
+body .wrapper main .consulting-first .consulting-content {
   position: relative;
   max-width: 1420px;
   min-width: 200px;
   padding: 60px 20px;
   margin: 0 auto;
 }
-body .wrapper .consulting-first .consulting-content .content-left {
+body .wrapper main .consulting-first .consulting-content .content-left {
   width: 700px;
   color: #fff;
 }
-body .wrapper .consulting-first .consulting-content .content-left .title {
+body .wrapper main .consulting-first .consulting-content .content-left .title {
   font-size: 32px;
   margin-bottom: 10px;
 }
-body .wrapper .consulting-first .consulting-content .content-left .paragraph {
+body .wrapper main .consulting-first .consulting-content .content-left .paragraph {
   font-size: 16px;
   margin-bottom: 25px;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-phone {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-phone {
   color: #334155;
   font-weight: 500;
   border-radius: 50px;
@@ -710,7 +713,7 @@ body .wrapper .consulting-first .consulting-content .content-left .consulting-fo
   outline-color: #ea5d4a;
   width: 300px;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-submit {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-submit {
   font-size: 16px;
   color: #334155;
   font-weight: 700;
@@ -723,23 +726,23 @@ body .wrapper .consulting-first .consulting-content .content-left .consulting-fo
   width: 300px;
   text-transform: uppercase;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-submit:hover {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-submit:hover {
   background-color: #e0a21c;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-submit:active {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-submit:active {
   background-color: #d4991a;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container {
   display: flex;
   align-items: center;
   margin: 15px 0 15px 5px;
   margin-bottom: 0;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox {
   position: relative;
   margin-right: 10px;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .custom-checkbox::before {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .custom-checkbox::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -750,7 +753,7 @@ body .wrapper .consulting-first .consulting-content .content-left .consulting-fo
   border: 1px solid #adb5bd;
   border-radius: 5px;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox {
   position: absolute;
   left: 0;
   width: 20px;
@@ -759,20 +762,20 @@ body .wrapper .consulting-first .consulting-content .content-left .consulting-fo
   z-index: 4;
   cursor: pointer;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
   background-color: #334155;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
   background-image: url("../img/checkbox_icon_light.svg");
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .agree {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .agree {
   font-size: 14px;
   cursor: default;
 }
-body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .agree {
+body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .agree {
   color: #fff;
 }
-body .wrapper .consulting-first .consulting-content .image-holder {
+body .wrapper main .consulting-first .consulting-content .image-holder {
   position: absolute;
   right: 110px;
   bottom: 0;
@@ -783,7 +786,7 @@ body .wrapper .consulting-first .consulting-content .image-holder {
   background-image: url("../img/consulting-image/consult-kid.png");
   z-index: 2;
 }
-body .wrapper .consulting-first .consulting-content .bg-holder {
+body .wrapper main .consulting-first .consulting-content .bg-holder {
   position: absolute;
   right: -120px;
   bottom: -220px;
@@ -793,31 +796,31 @@ body .wrapper .consulting-first .consulting-content .bg-holder {
   background-size: contain;
   background-image: url("../img/consulting-image/bg.svg");
 }
-body .wrapper .consulting-second {
+body .wrapper main .consulting-second {
   width: 100%;
   background-color: #fff6d1;
   border-radius: 30px;
 }
-body .wrapper .consulting-second .consulting-content {
+body .wrapper main .consulting-second .consulting-content {
   position: relative;
   max-width: 1420px;
   min-width: 200px;
   padding: 60px 20px;
   margin: 0 auto;
 }
-body .wrapper .consulting-second .consulting-content .content-left {
+body .wrapper main .consulting-second .consulting-content .content-left {
   width: 700px;
   color: #334155;
 }
-body .wrapper .consulting-second .consulting-content .content-left .title {
+body .wrapper main .consulting-second .consulting-content .content-left .title {
   font-size: 32px;
   margin-bottom: 10px;
 }
-body .wrapper .consulting-second .consulting-content .content-left .paragraph {
+body .wrapper main .consulting-second .consulting-content .content-left .paragraph {
   font-size: 16px;
   margin-bottom: 25px;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
   color: #334155;
   font-weight: 500;
   border-radius: 50px;
@@ -827,7 +830,7 @@ body .wrapper .consulting-second .consulting-content .content-left .consulting-f
   outline-color: #ea5d4a;
   width: 300px;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-submit {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-submit {
   font-size: 16px;
   color: #334155;
   font-weight: 700;
@@ -840,23 +843,23 @@ body .wrapper .consulting-second .consulting-content .content-left .consulting-f
   width: 300px;
   text-transform: uppercase;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-submit:hover {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-submit:hover {
   background-color: #e0a21c;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-submit:active {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-submit:active {
   background-color: #d4991a;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container {
   display: flex;
   align-items: center;
   margin: 15px 0 15px 5px;
   margin-bottom: 0;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox {
   position: relative;
   margin-right: 10px;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .custom-checkbox::before {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .custom-checkbox::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -867,7 +870,7 @@ body .wrapper .consulting-second .consulting-content .content-left .consulting-f
   border: 1px solid #adb5bd;
   border-radius: 5px;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox {
   position: absolute;
   left: 0;
   width: 20px;
@@ -876,20 +879,20 @@ body .wrapper .consulting-second .consulting-content .content-left .consulting-f
   z-index: 4;
   cursor: pointer;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:hover + .custom-checkbox::before {
   background-color: #334155;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
   background-image: url("../img/checkbox_icon_dark.svg");
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .agree {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .agree {
   font-size: 14px;
   cursor: default;
 }
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .agree {
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .agree {
   color: #334155;
 }
-body .wrapper .consulting-second .consulting-content .image-holder {
+body .wrapper main .consulting-second .consulting-content .image-holder {
   position: absolute;
   right: 110px;
   bottom: 0;
@@ -900,7 +903,7 @@ body .wrapper .consulting-second .consulting-content .image-holder {
   background-image: url("../img/consulting-image/consult-kid-second.png");
   z-index: 2;
 }
-body .wrapper .consulting-second .consulting-content .bg-holder {
+body .wrapper main .consulting-second .consulting-content .bg-holder {
   position: absolute;
   right: -120px;
   bottom: -220px;
@@ -910,124 +913,124 @@ body .wrapper .consulting-second .consulting-content .bg-holder {
   background-size: contain;
   background-image: url("../img/consulting-image/bg-second.svg");
 }
-body .wrapper .consulting-second .consulting-content .image-holder {
+body .wrapper main .consulting-second .consulting-content .image-holder {
   width: 303px;
   height: 391px;
 }
-body .wrapper .consulting-second .consulting-content .bg-holder {
+body .wrapper main .consulting-second .consulting-content .bg-holder {
   bottom: -229px;
 }
 @media screen and (max-width: 1350px) {
-  body .wrapper .consulting-first .consulting-content .content-left,
-body .wrapper .consulting-second .consulting-content .content-left {
+  body .wrapper main .consulting-first .consulting-content .content-left,
+body .wrapper main .consulting-second .consulting-content .content-left {
     position: relative;
     width: 620px;
     z-index: 3;
   }
 }
 @media screen and (max-width: 1024px) {
-  body .wrapper .consulting-first,
-body .wrapper .consulting-second {
+  body .wrapper main .consulting-first,
+body .wrapper main .consulting-second {
     width: 100%;
     border-radius: 30px;
   }
-  body .wrapper .consulting-first .consulting-content,
-body .wrapper .consulting-second .consulting-content {
+  body .wrapper main .consulting-first .consulting-content,
+body .wrapper main .consulting-second .consulting-content {
     position: relative;
     max-width: 1420px;
     padding: 60px 20px;
     margin: 0 auto;
   }
-  body .wrapper .consulting-first .consulting-content .content-left,
-body .wrapper .consulting-second .consulting-content .content-left {
+  body .wrapper main .consulting-first .consulting-content .content-left,
+body .wrapper main .consulting-second .consulting-content .content-left {
     width: 300px;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .title,
-body .wrapper .consulting-second .consulting-content .content-left .title {
+  body .wrapper main .consulting-first .consulting-content .content-left .title,
+body .wrapper main .consulting-second .consulting-content .content-left .title {
     text-align: center;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .paragraph,
-body .wrapper .consulting-second .consulting-content .content-left .paragraph {
+  body .wrapper main .consulting-first .consulting-content .content-left .paragraph,
+body .wrapper main .consulting-second .consulting-content .content-left .paragraph {
     text-align: center;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-phone,
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
+  body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-phone,
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
     display: block;
   }
-  body .wrapper .consulting-first .consulting-content .image-holder,
-body .wrapper .consulting-second .consulting-content .image-holder {
+  body .wrapper main .consulting-first .consulting-content .image-holder,
+body .wrapper main .consulting-second .consulting-content .image-holder {
     right: 30px;
     width: 309px;
     height: 474px;
   }
-  body .wrapper .consulting-first .consulting-content .bg-holder,
-body .wrapper .consulting-second .consulting-content .bg-holder {
+  body .wrapper main .consulting-first .consulting-content .bg-holder,
+body .wrapper main .consulting-second .consulting-content .bg-holder {
     right: -185px;
     bottom: -220px;
     width: 815px;
     height: 833px;
   }
-  body .wrapper .consulting-second .consulting-content .image-holder {
+  body .wrapper main .consulting-second .consulting-content .image-holder {
     right: 30px;
     width: 366px;
     height: 474px;
   }
 }
 @media screen and (max-width: 768px) {
-  body .wrapper .consulting-first .consulting-content,
-body .wrapper .consulting-second .consulting-content {
+  body .wrapper main .consulting-first .consulting-content,
+body .wrapper main .consulting-second .consulting-content {
     padding: 40px 10px;
   }
-  body .wrapper .consulting-first .consulting-content .content-left,
-body .wrapper .consulting-second .consulting-content .content-left {
+  body .wrapper main .consulting-first .consulting-content .content-left,
+body .wrapper main .consulting-second .consulting-content .content-left {
     width: 100%;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .title,
-body .wrapper .consulting-second .consulting-content .content-left .title {
+  body .wrapper main .consulting-first .consulting-content .content-left .title,
+body .wrapper main .consulting-second .consulting-content .content-left .title {
     font-size: 24px;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .paragraph,
-body .wrapper .consulting-second .consulting-content .content-left .paragraph {
+  body .wrapper main .consulting-first .consulting-content .content-left .paragraph,
+body .wrapper main .consulting-second .consulting-content .content-left .paragraph {
     font-size: 14px;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-phone,
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
+  body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-phone,
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-phone {
     width: 100%;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .consulting-form .consulting-submit,
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .consulting-submit {
+  body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .consulting-submit,
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .consulting-submit {
     width: 100%;
   }
-  body .wrapper .consulting-first .consulting-content .content-left .consulting-form .checkbox-container,
-body .wrapper .consulting-second .consulting-content .content-left .consulting-form .checkbox-container {
+  body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container,
+body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container {
     margin-bottom: 0;
   }
-  body .wrapper .consulting-first .consulting-content .image-holder,
-body .wrapper .consulting-second .consulting-content .image-holder {
+  body .wrapper main .consulting-first .consulting-content .image-holder,
+body .wrapper main .consulting-second .consulting-content .image-holder {
     display: none;
   }
-  body .wrapper .consulting-first .consulting-content .bg-holder,
-body .wrapper .consulting-second .consulting-content .bg-holder {
+  body .wrapper main .consulting-first .consulting-content .bg-holder,
+body .wrapper main .consulting-second .consulting-content .bg-holder {
     display: none;
   }
 }
-body .wrapper .extra-service {
+body .wrapper main .extra-service {
   max-width: 1420px;
   min-width: 280px;
   padding: 0 15px;
   margin: 80px auto;
 }
-body .wrapper .extra-service .section-title {
+body .wrapper main .extra-service .section-title {
   font-size: 32px;
   color: #8081bd;
   margin-bottom: 30px;
 }
-body .wrapper .extra-service .services-container {
+body .wrapper main .extra-service .services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body .wrapper .extra-service .services-container .service {
+body .wrapper main .extra-service .services-container .service {
   display: flex;
   align-items: center;
   flex: 1;
@@ -1037,7 +1040,7 @@ body .wrapper .extra-service .services-container .service {
   margin: 10px;
   border-radius: 10px;
 }
-body .wrapper .extra-service .services-container .service .icon {
+body .wrapper main .extra-service .services-container .service .icon {
   flex-shrink: 0;
   width: 60px;
   height: 60px;
@@ -1048,100 +1051,100 @@ body .wrapper .extra-service .services-container .service .icon {
   border-radius: 10px;
   margin: 0 10px 0 15px;
 }
-body .wrapper .extra-service .services-container .service .title {
+body .wrapper main .extra-service .services-container .service .title {
   width: 100%;
   text-align: center;
   color: #334155;
 }
-body .wrapper .extra-service .services-container .service:nth-child(1) {
+body .wrapper main .extra-service .services-container .service:nth-child(1) {
   background-color: #fff6d1;
 }
-body .wrapper .extra-service .services-container .service:nth-child(1) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(1) .icon {
   background-image: url("../img/extra-service/yoga.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(2) {
+body .wrapper main .extra-service .services-container .service:nth-child(2) {
   flex: 2;
 }
-body .wrapper .extra-service .services-container .service:nth-child(2) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(2) .icon {
   background-image: url("../img/extra-service/wood.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(3) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(3) .icon {
   background-image: url("../img/extra-service/golf.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(4) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(4) .icon {
   background-image: url("../img/extra-service/bike.svg");
   background-size: 70%;
 }
-body .wrapper .extra-service .services-container .service:nth-child(5) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(5) .icon {
   background-image: url("../img/extra-service/lego.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(6) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(6) .icon {
   background-image: url("../img/extra-service/plastic.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(7) {
+body .wrapper main .extra-service .services-container .service:nth-child(7) {
   flex: 2;
 }
-body .wrapper .extra-service .services-container .service:nth-child(7) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(7) .icon {
   background-image: url("../img/extra-service/rhetoric.svg");
   background-size: 50%;
 }
-body .wrapper .extra-service .services-container .service:nth-child(8) {
+body .wrapper main .extra-service .services-container .service:nth-child(8) {
   flex: 2;
 }
-body .wrapper .extra-service .services-container .service:nth-child(8) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(8) .icon {
   background-image: url("../img/extra-service/rock.svg");
 }
-body .wrapper .extra-service .services-container .service:nth-child(9) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(9) .icon {
   background-image: url("../img/extra-service/theatro.svg");
   background-size: 50%;
 }
-body .wrapper .extra-service .services-container .service:nth-child(10) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(10) .icon {
   background-image: url("../img/extra-service/cook.svg");
   background-size: 70%;
 }
-body .wrapper .extra-service .services-container .service:nth-child(11) {
+body .wrapper main .extra-service .services-container .service:nth-child(11) {
   flex: 2;
 }
-body .wrapper .extra-service .services-container .service:nth-child(11) .icon {
+body .wrapper main .extra-service .services-container .service:nth-child(11) .icon {
   background-image: url("../img/extra-service/sand.svg");
 }
 @media screen and (max-width: 768px) {
-  body .wrapper .extra-service {
+  body .wrapper main .extra-service {
     padding: 0;
   }
-  body .wrapper .extra-service .section-title {
+  body .wrapper main .extra-service .section-title {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 560px) {
-  body .wrapper .extra-service .services-container .service {
+  body .wrapper main .extra-service .services-container .service {
     margin: 0 0 10px 0;
   }
-  body .wrapper .extra-service .services-container .service .title {
+  body .wrapper main .extra-service .services-container .service .title {
     font-size: 14px;
   }
 }
-body .wrapper .advantage {
+body .wrapper main .advantage {
   max-width: 1420px;
   min-width: 280px;
   padding: 0 15px;
   margin: 80px auto;
 }
-body .wrapper .advantage .section-title {
+body .wrapper main .advantage .section-title {
   font-size: 32px;
   color: #8081bd;
   margin-bottom: 15px;
 }
-body .wrapper .advantage .section-subtitle {
+body .wrapper main .advantage .section-subtitle {
   color: #334155;
   margin-bottom: 30px;
 }
-body .wrapper .advantage .advantage-container {
+body .wrapper main .advantage .advantage-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body .wrapper .advantage .advantage-container .adv {
+body .wrapper main .advantage .advantage-container .adv {
   display: flex;
   align-items: center;
   min-width: 30%;
@@ -1149,7 +1152,7 @@ body .wrapper .advantage .advantage-container .adv {
   flex: 1;
   margin: 20px;
 }
-body .wrapper .advantage .advantage-container .adv .icon {
+body .wrapper main .advantage .advantage-container .adv .icon {
   flex-shrink: 0;
   width: 60px;
   height: 60px;
@@ -1159,103 +1162,103 @@ body .wrapper .advantage .advantage-container .adv .icon {
   border-radius: 10px;
   margin: 0 15px 0 15px;
 }
-body .wrapper .advantage .advantage-container .adv .title {
+body .wrapper main .advantage .advantage-container .adv .title {
   width: 100%;
   color: #334155;
   font-weight: 700;
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(1) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(1) .icon {
   background-color: #f6b31f;
   background-image: url("../img/advantage/hat.svg");
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(2) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(2) .icon {
   background-color: #f3acc8;
   background-image: url("../img/advantage/dice.svg");
   background-size: 50%;
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(3) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(3) .icon {
   background-color: #8081bd;
   background-image: url("../img/advantage/heart.svg");
   background-size: 50%;
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(4) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(4) .icon {
   background-color: #0e95d3;
   background-image: url("../img/advantage/list.svg");
   background-size: 40%;
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(5) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(5) .icon {
   background-color: #f6b31f;
   background-image: url("../img/advantage/mic.svg");
   background-size: 40%;
 }
-body .wrapper .advantage .advantage-container .adv:nth-child(6) .icon {
+body .wrapper main .advantage .advantage-container .adv:nth-child(6) .icon {
   background-color: #f3acc8;
   background-image: url("../img/advantage/comm.svg");
 }
 @media screen and (max-width: 560px) {
-  body .wrapper .advantage {
+  body .wrapper main .advantage {
     padding: 0 10px;
   }
-  body .wrapper .advantage .section-title {
+  body .wrapper main .advantage .section-title {
     font-size: 24px;
   }
-  body .wrapper .advantage .section-subtitle {
+  body .wrapper main .advantage .section-subtitle {
     font-size: 14px;
   }
-  body .wrapper .advantage .advantage-container {
+  body .wrapper main .advantage .advantage-container {
     justify-content: flex-start;
   }
-  body .wrapper .advantage .advantage-container .adv {
+  body .wrapper main .advantage .advantage-container .adv {
     flex-direction: column;
     min-width: 40%;
     height: 150px;
     margin: 0 10px 0;
   }
-  body .wrapper .advantage .advantage-container .adv .icon {
+  body .wrapper main .advantage .advantage-container .adv .icon {
     margin: 0 0 15px 0;
   }
-  body .wrapper .advantage .advantage-container .adv .title {
+  body .wrapper main .advantage .advantage-container .adv .title {
     font-size: 14px;
     text-align: center;
   }
 }
-body .wrapper .about {
+body .wrapper main .about {
   max-width: 1420px;
   min-width: 280px;
   padding: 0 15px;
   margin: 80px auto;
 }
-body .wrapper .about .section-title {
+body .wrapper main .about .section-title {
   font-size: 32px;
   color: #8081bd;
   margin-bottom: 15px;
 }
-body .wrapper .about .section-subtitle {
+body .wrapper main .about .section-subtitle {
   color: #334155;
   margin-bottom: 30px;
 }
-body .wrapper .about .about-mission {
+body .wrapper main .about .about-mission {
   color: #ea5d4a;
   font-weight: 700;
   margin-bottom: 30px;
 }
-body .wrapper .about .about-list {
+body .wrapper main .about .about-list {
   margin-left: 20px;
 }
-body .wrapper .about .about-list .list-elem {
+body .wrapper main .about .about-list .list-elem {
   color: #334155;
   font-weight: 500;
   margin-bottom: 10px;
 }
-body .wrapper .about .about-list .list-elem:last-child {
+body .wrapper main .about .about-list .list-elem:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 560px) {
-  body .wrapper .about {
+  body .wrapper main .about {
     padding: 0 10px;
     font-size: 14px;
   }
-  body .wrapper .about .section-title {
+  body .wrapper main .about .section-title {
     font-size: 24px;
   }
 }

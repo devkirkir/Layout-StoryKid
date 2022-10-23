@@ -22,15 +22,18 @@
       .slide-info {
         position: absolute;
         left: 70px;
+        text-align: center;
         color: #fff;
-        background-color: $lavanda;
+        background-color: $lavanda07;
         border-radius: 30px;
         padding: 20px;
         margin: 0 10px;
 
         &-title {
+          line-height: 0.78;
           font-size: 76px;
           font-weight: 700;
+          margin-bottom: 10px;
         }
 
         &-paragraph {
