@@ -5,7 +5,7 @@
 Верстка без сторонних библиотек. Занимаюсь ей когда хочу отдохнуть от других задач.
 
 🔗 [Ссылка на хостинг](http://y913762g.beget.tech/)
-🔗 [GitHub Pages](https://zzloyshkolnik.github.io/Layout-StoryKid/)
+🔗 [GitHub Pages](https://devkirkir.github.io/Layout-StoryKid/)
 
 ## Технологии
 - HTML
