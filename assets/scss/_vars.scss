@@ -21,3 +21,12 @@ $orangeActive: #d4991a;
 $red: #ea5d4a;
 $redHover: #d44c3a;
 $redActive: #af3d2e;
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -3,14 +3,15 @@
 @import "_mixins.scss";
 
 body {
-  overflow-x: hidden;
-  @import "components/wrapper/wrapper.scss";
-  @import "components/modal-enroll/modal-enroll.scss";
-  @import "components/overlay/overlay.scss";
+    overflow: hidden;
+    @import "components/loader/loader.scss";
+    @import "components/wrapper/wrapper.scss";
+    @import "components/modal-enroll/modal-enroll.scss";
+    @import "components/overlay/overlay.scss";
 
-  @import "components/message/message.scss";
+    @import "components/message/message.scss";
 }
 
 button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
