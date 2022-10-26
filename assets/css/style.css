@@ -725,7 +725,7 @@ body .wrapper main .banner .form-container .banner-form .checkbox-container .che
   background-color: #334155;
 }
 body .wrapper main .banner .form-container .banner-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
-  background-image: url("../img/checkbox_icon_light.svg");
+  background-image: url("../img/checkbox/checkbox_icon_light.svg");
 }
 body .wrapper main .banner .form-container .banner-form .checkbox-container .agree {
   font-size: 14px;
@@ -871,7 +871,7 @@ body .wrapper main .consulting-first .consulting-content .content-left .consulti
   background-color: #334155;
 }
 body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
-  background-image: url("../img/checkbox_icon_light.svg");
+  background-image: url("../img/checkbox/checkbox_icon_light.svg");
 }
 body .wrapper main .consulting-first .consulting-content .content-left .consulting-form .checkbox-container .agree {
   font-size: 14px;
@@ -890,6 +890,13 @@ body .wrapper main .consulting-first .consulting-content .image-holder {
   background-repeat: no-repeat;
   background-image: url("../img/consulting-image/consult-kid.png");
   z-index: 2;
+}
+@supports (background: url("../img/consulting-image/consult-kid.webp")) {
+  body .wrapper main .consulting-first .consulting-content .image-holder {
+    background: url("../img/consulting-image/consult-kid.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 body .wrapper main .consulting-first .consulting-content .bg-holder {
   position: absolute;
@@ -988,7 +995,7 @@ body .wrapper main .consulting-second .consulting-content .content-left .consult
   background-color: #334155;
 }
 body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
-  background-image: url("../img/checkbox_icon_dark.svg");
+  background-image: url("../img/checkbox/checkbox_icon_dark.svg");
 }
 body .wrapper main .consulting-second .consulting-content .content-left .consulting-form .checkbox-container .agree {
   font-size: 14px;
@@ -1007,6 +1014,13 @@ body .wrapper main .consulting-second .consulting-content .image-holder {
   background-repeat: no-repeat;
   background-image: url("../img/consulting-image/consult-kid-second.png");
   z-index: 2;
+}
+@supports (background: url("../img/consulting-image/consult-kid-second.webp")) {
+  body .wrapper main .consulting-second .consulting-content .image-holder {
+    background: url("../img/consulting-image/consult-kid-second.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 body .wrapper main .consulting-second .consulting-content .bg-holder {
   position: absolute;
@@ -1370,9 +1384,16 @@ body .wrapper main .about .about-list .list-elem:last-child {
 body .wrapper .map {
   width: 100%;
   height: 500px;
-  background-image: url("../img/map.png");
+  background-image: url("../img/map/map.png");
   background-position: 30% center;
   border-radius: 30px;
+}
+@supports (background: url("../img/map/map.webp")) {
+  body .wrapper .map {
+    background: url("../img/map/map.webp");
+    background-position: 30% center;
+    border-radius: 30px;
+  }
 }
 body .wrapper .footer {
   max-width: 1420px;
@@ -1634,7 +1655,7 @@ body .modal-enroll .modal-content .modal-bottom .modal-form .checkbox-container 
   background-color: #334155;
 }
 body .modal-enroll .modal-content .modal-bottom .modal-form .checkbox-container .checkbox .input-checkbox:checked + .custom-checkbox::before {
-  background-image: url("../img/checkbox_icon_light.svg");
+  background-image: url("../img/checkbox/checkbox_icon_light.svg");
 }
 body .modal-enroll .modal-content .modal-bottom .modal-form .checkbox-container .agree {
   font-size: 14px;

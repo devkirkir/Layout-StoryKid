@@ -1,26 +1,34 @@
 .consulting-first {
-  @include consult(#fff, $lavanda, "../img/consulting-image/consult-kid.png", "../img/consulting-image/bg.svg", true);
+    @include consult(
+        #fff,
+        $lavanda,
+        "../img/consulting-image/consult-kid.png",
+        "../img/consulting-image/consult-kid.webp",
+        "../img/consulting-image/bg.svg",
+        true
+    );
 }
 
 .consulting-second {
-  @include consult(
-    $darkblue,
-    $peach,
-    "../img/consulting-image/consult-kid-second.png",
-    "../img/consulting-image/bg-second.svg",
-    false
-  );
+    @include consult(
+        $darkblue,
+        $peach,
+        "../img/consulting-image/consult-kid-second.png",
+        "../img/consulting-image/consult-kid-second.webp",
+        "../img/consulting-image/bg-second.svg",
+        false
+    );
 
-  .consulting-content {
-    .image-holder {
-      width: 303px;
-      height: 391px;
-    }
+    .consulting-content {
+        .image-holder {
+            width: 303px;
+            height: 391px;
+        }
 
-    .bg-holder {
-      bottom: -229px;
+        .bg-holder {
+            bottom: -229px;
+        }
     }
-  }
 }
 
 @import "media/media1350.scss";
