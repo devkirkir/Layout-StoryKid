@@ -41,6 +41,7 @@
                                 width="130px"
                                 height="35px"
                                 src="assets/img/logo.svg"
+                                alt="Логотип"
                         /></a>
                     </div>
 
@@ -129,14 +130,17 @@
                             </svg>
                         </a>
 
-                        <button class="burger">
+                        <button class="burger" aria-label="Открыть меню">
                             <div class="line"></div>
                             <div class="line"></div>
                             <div class="line"></div>
                         </button>
                     </div>
 
-                    <button class="btn-enroll open-enroll">
+                    <button
+                        class="btn-enroll open-enroll"
+                        aria-label="Записаться на экскурсию"
+                    >
                         Записаться на экскурсию
                     </button>
                 </div>
@@ -265,7 +269,10 @@
                 </div>
 
                 <div class="header-hidden-menu">
-                    <button class="hidden-menu-close-btn">
+                    <button
+                        class="hidden-menu-close-btn"
+                        aria-label="Закрыть меню"
+                    >
                         <svg
                             width="40"
                             height="40"
@@ -332,7 +339,10 @@
                         </ul>
                     </nav>
 
-                    <button class="hidden-btn-enroll open-enroll">
+                    <button
+                        class="hidden-btn-enroll open-enroll"
+                        aria-label="Записаться на экскурсию"
+                    >
                         Записаться на экскурсию
                     </button>
 
@@ -447,7 +457,10 @@
                         </div>
 
                         <div class="banner-slider-controll">
-                            <button class="banner-slider-prev-btn">
+                            <button
+                                class="banner-slider-prev-btn"
+                                aria-label="Предыдущий слайд"
+                            >
                                 <svg
                                     width="14"
                                     height="26"
@@ -462,7 +475,10 @@
                                 </svg>
                             </button>
 
-                            <button class="banner-slider-next-btn">
+                            <button
+                                class="banner-slider-next-btn"
+                                aria-label="Следующий слайд "
+                            >
                                 <svg
                                     width="14"
                                     height="26"
@@ -522,6 +538,7 @@
                                         type="checkbox"
                                         class="input-checkbox"
                                         name="enroll-checkbox"
+                                        aria-label="Чекбокс согласия с условиями"
                                         required
                                     />
 
@@ -550,27 +567,36 @@
                 <section class="services">
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/work_time.png"
+                            alt="Иконка сервиса"
                         />
                         <span><b>Часы работы:</b> с 7:00 до 19:00</span>
                     </div>
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/groups.png"
+                            alt="Иконка сервиса"
                         />
                         <span><b>Группы:</b> до 15 человек</span>
                     </div>
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/space.png"
+                            alt="Иконка сервиса"
                         />
                         <span
                             ><b>Площадь для прогулок:</b> собственная
@@ -580,18 +606,24 @@
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/video.png"
+                            alt="Иконка сервиса"
                         />
                         <span><b>Видеонаблюдение:</b> онлайн</span>
                     </div>
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/eng.png"
+                            alt="Иконка сервиса"
                         />
                         <span
                             ><b>Англоязычная среда:</b> билингвал / экспат</span
@@ -600,18 +632,24 @@
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/age.png"
+                            alt="Иконка сервиса"
                         />
                         <span><b>Возраст детей:</b> с 1,5 до 7 лет</span>
                     </div>
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/med.png"
+                            alt="Иконка сервиса"
                         />
                         <span
                             ><b>Утренний фильтр медработником:</b>
@@ -621,17 +659,23 @@
 
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/house.png"
+                            alt="Иконка сервиса"
                         />
                         <span><b>Помещение:</b> 800 кв.м</span>
                     </div>
                     <div class="service">
                         <img
+                            width="76px"
+                            height="76px"
                             loading="lazy"
                             decoding="async"
                             src="assets/img/service-icons/food.png"
+                            alt="Иконка сервиса"
                         />
                         <span
                             ><b>Питание:</b> 5-разовое, с учетом индивидуальных
@@ -673,6 +717,7 @@
                                             type="checkbox"
                                             class="input-checkbox"
                                             name="consulting-checkbox"
+                                            aria-label="Чекбокс согласия с условиями"
                                             required
                                         />
 
@@ -846,6 +891,7 @@
                                             type="checkbox"
                                             class="input-checkbox"
                                             name="consulting-checkbox"
+                                            aria-label="Чекбокс согласия с условиями"
                                             required
                                         />
 
@@ -1086,6 +1132,7 @@
                                     type="checkbox"
                                     class="input-checkbox"
                                     name="enroll-checkbox"
+                                    aria-label="Чекбокс согласия с условиями"
                                     required
                                 />
                                 <label

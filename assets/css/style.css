@@ -776,6 +776,7 @@ body .wrapper main .services .service span {
   }
   body .wrapper main .services .service img {
     width: 50px;
+    height: 50px;
     margin-right: 0;
     margin-bottom: 10px;
   }
