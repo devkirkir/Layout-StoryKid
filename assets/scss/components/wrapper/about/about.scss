@@ -1,36 +1,81 @@
-.about {
-  @include section(80px);
+.about-centre {
+    @include section(40px);
+    margin-bottom: 60px;
 
-  .section-title {
-    font-size: 32px;
-    color: $lavanda;
-    margin-bottom: 15px;
-  }
-
-  .section-subtitle {
-    color: $darkblue;
-    margin-bottom: 30px;
-  }
-
-  .about-mission {
-    color: $red;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
-
-  .about-list {
-    margin-left: 20px;
-
-    .list-elem {
-      color: $darkblue;
-      font-weight: 500;
-      margin-bottom: 10px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+    .about-center-title {
+        font-size: 32px;
+        color: $lavanda;
+        margin-bottom: 35px;
     }
-  }
+
+    .container {
+        display: flex;
+
+        .about-img {
+            margin-right: 30px;
+        }
+
+        .about {
+            margin: 0;
+
+            .about-title {
+                margin-bottom: 30px;
+            }
+
+            .about-boss {
+                margin-bottom: 30px;
+
+                .name {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $lavanda;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+                    color: $darkblue;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
+.about {
+    @include section(80px);
+
+    .about-title {
+        font-size: 32px;
+        color: $lavanda;
+        margin-bottom: 15px;
+    }
+
+    .about-subtitle {
+        color: $darkblue;
+        margin-bottom: 30px;
+    }
+
+    .about-mission {
+        color: $red;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .about-list {
+        margin-left: 20px;
+
+        .list-elem {
+            color: $darkblue;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@import "media/media1024.scss";
 @import "media/media560.scss";

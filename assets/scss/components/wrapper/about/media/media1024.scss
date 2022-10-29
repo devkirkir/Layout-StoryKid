@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px) {
+    .about-centre {
+        .container {
+            flex-direction: column;
+
+            .about-img {
+                margin: 0 auto 20px;
+            }
+
+            .about {
+                .about-title {
+                    text-align: center;
+                }
+
+                .about-boss {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

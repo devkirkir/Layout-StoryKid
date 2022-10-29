@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KidStory | Главная</title>
+        <title>KidStory | О центре</title>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
@@ -51,7 +51,7 @@
                                 <li class="navigation-elem">
                                     <a
                                         class="navigation-link nav-about"
-                                        href="#"
+                                        href="./about.html"
                                     >
                                         О нас</a
                                     >
@@ -302,7 +302,10 @@
                     <nav class="hidden-navigation">
                         <ul class="hidden-navigation-list">
                             <li class="hidden-navigation-elem">
-                                <a class="hidden-navigation-link" href="#">
+                                <a
+                                    class="hidden-navigation-link"
+                                    href="./about.html"
+                                >
                                     О нас</a
                                 >
                             </li>
@@ -391,563 +394,68 @@
             </header>
 
             <main>
-                <section class="banner">
-                    <div class="banner-slider">
-                        <div class="banner-slides">
-                            <div class="banner-slide">
-                                <div class="slide-info">
-                                    <h1 class="slide-info-title">Kidsstory</h1>
-                                    <p class="slide-info-paragraph">
-                                        Английский детский сад и клуб
-                                    </p>
-                                </div>
-                                <picture>
-                                    <source
-                                        srcset="
-                                            assets/img/slider-image/slider-bg.webp
-                                        "
-                                        type="image/webp" />
-                                    <img
-                                        src="assets/img/slider-image/slider-bg.png"
-                                        alt="Рекламный слайд"
-                                /></picture>
-                            </div>
-                            <div class="banner-slide">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-title">Скидка</h3>
-                                    <p class="slide-info-paragraph">
-                                        Позвоните сейчас и получите скидку 10%
-                                    </p>
-                                </div>
-                                <picture>
-                                    <source
-                                        srcset="
-                                            assets/img/slider-image/slider-bg2.webp
-                                        "
-                                        type="image/webp" />
-                                    <img
-                                        loading="lazy"
-                                        decoding="async"
-                                        src="assets/img/slider-image/slider-bg2.png"
-                                        alt="Рекламный слайд"
-                                /></picture>
-                            </div>
-                            <div class="banner-slide">
-                                <div class="slide-info">
-                                    <h3 class="slide-info-title">
-                                        Летний лагерь
-                                    </h3>
-                                    <p class="slide-info-paragraph">
-                                        У нас открылся летний лагерь!
-                                    </p>
-                                </div>
-                                <picture>
-                                    <source
-                                        srcset="
-                                            assets/img/slider-image/slider-bg3.webp
-                                        "
-                                        type="image/webp" />
-                                    <img
-                                        loading="lazy"
-                                        decoding="async"
-                                        src="assets/img/slider-image/slider-bg.png"
-                                        alt="Рекламный слайд"
-                                /></picture>
-                            </div>
+                <section class="about-centre">
+                    <h3 class="about-center-title">О центре</h3>
+
+                    <div class="container">
+                        <div class="about-img">
+                            <picture>
+                                <source
+                                    srcset="assets/img/about-page/boss.webp"
+                                    type="webp/image"
+                                />
+                                <img
+                                    width="384px"
+                                    height="369px"
+                                    src="assets/img/about-page/boss.png"
+                                    alt="Руководитель"
+                                />
+                            </picture>
                         </div>
 
-                        <div class="banner-slider-controll">
-                            <button
-                                class="banner-slider-prev-btn"
-                                aria-label="Предыдущий слайд"
-                            >
-                                <svg
-                                    width="14"
-                                    height="26"
-                                    viewBox="0 0 14 26"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
+                        <div class="about">
+                            <h3 class="about-title">Руководитель Kids Story</h3>
+
+                            <div class="about-boss">
+                                <span class="name"
+                                    >Иванова Марина Анатольевна</span
                                 >
-                                    <path
-                                        d="M13.1994 23.944C13.4759 24.221 13.4759 24.6705 13.1994 24.9475C12.9228 25.2246 12.474 25.2246 12.1975 24.9475L0.800702 13.5311C0.524169 13.2541 0.524169 12.8045 0.800702 12.5275L12.1975 1.11108C12.474 0.834068 12.9228 0.834068 13.1994 1.11108C13.4759 1.38809 13.4759 1.83766 13.1994 2.11467L2.3035 13.0293L13.1994 23.944Z"
-                                        fill="#334155"
-                                    />
-                                </svg>
-                            </button>
 
-                            <button
-                                class="banner-slider-next-btn"
-                                aria-label="Следующий слайд "
-                            >
-                                <svg
-                                    width="14"
-                                    height="26"
-                                    viewBox="0 0 14 26"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M0.800572 2.05604C0.524039 1.77903 0.524039 1.32946 0.800572 1.05245C1.07711 0.77544 1.52591 0.77544 1.80244 1.05245L13.1992 12.4689C13.4758 12.7459 13.4758 13.1955 13.1992 13.4725L1.80244 24.8889C1.5259 25.1659 1.0771 25.1659 0.80057 24.8889C0.524037 24.6119 0.524037 24.1623 0.80057 23.8853L11.6964 12.9707L0.800572 2.05604Z"
-                                        fill="#334155"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="form-container">
-                        <h3 class="banner-form-title">
-                            Запишитесь на персональную экскурсию
-                        </h3>
-
-                        <p class="banner-form-paragraph">
-                            Заполните форму и посмотрите детский сад вживую в
-                            удобное для вас время
-                        </p>
-
-                        <form id="banner-enroll-form" class="banner-form">
-                            <input
-                                type="text"
-                                data-input-type="name"
-                                class="input-name"
-                                name="enroll-name"
-                                placeholder="Имя"
-                                required
-                            />
-
-                            <input
-                                type="tel"
-                                data-input-type="phone"
-                                class="input-phone"
-                                name="banner-enroll-phone"
-                                placeholder="Телефон"
-                                required
-                            />
-
-                            <input
-                                type="email"
-                                class="input-email"
-                                name="enroll-email"
-                                placeholder="Почта (не обязательно)"
-                            />
-
-                            <div class="checkbox-container">
-                                <div class="checkbox">
-                                    <input
-                                        id="form-enroll-checkbox"
-                                        type="checkbox"
-                                        class="input-checkbox"
-                                        name="enroll-checkbox"
-                                        aria-label="Чекбокс согласия с условиями"
-                                        required
-                                    />
-
-                                    <label
-                                        class="custom-checkbox"
-                                        for="form-enroll-checkbox"
-                                    ></label>
-                                </div>
-
-                                <span class="agree"
-                                    >Я принимаю условия пользовательского
-                                    соглашения</span
-                                >
+                                <span>Педагог - психолог</span>
+                                <span>Стаж 11 лет</span>
                             </div>
 
-                            <input
-                                type="submit"
-                                class="input-submit"
-                                name="submit"
-                                value="записаться"
-                            />
-                        </form>
-                    </div>
-                </section>
-
-                <section class="services">
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/work_time.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span><b>Часы работы:</b> с 7:00 до 19:00</span>
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/groups.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span><b>Группы:</b> до 15 человек</span>
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/space.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span
-                            ><b>Площадь для прогулок:</b> собственная
-                            территория</span
-                        >
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/video.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span><b>Видеонаблюдение:</b> онлайн</span>
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/eng.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span
-                            ><b>Англоязычная среда:</b> билингвал / экспат</span
-                        >
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/age.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span><b>Возраст детей:</b> с 1,5 до 7 лет</span>
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/med.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span
-                            ><b>Утренний фильтр медработником:</b>
-                            ежедневно</span
-                        >
-                    </div>
-
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/house.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span><b>Помещение:</b> 800 кв.м</span>
-                    </div>
-                    <div class="service">
-                        <img
-                            width="76px"
-                            height="76px"
-                            loading="lazy"
-                            decoding="async"
-                            src="assets/img/service-icons/food.png"
-                            alt="Иконка сервиса"
-                        />
-                        <span
-                            ><b>Питание:</b> 5-разовое, с учетом индивидуальных
-                            особенностей ребенка</span
-                        >
-                    </div>
-                </section>
-
-                <section class="consulting-first">
-                    <div class="consulting-content">
-                        <div class="content-left">
-                            <h4 class="title">
-                                Есть вопросы? Получите бесплатную консультацию
-                            </h4>
-                            <p class="paragraph">
-                                Оставьте телефон и мы перезвоним и расскажем все
-                                подробности о филиале
+                            <p class="about-subtitle">
+                                Мы создали пространство, в котором каждый
+                                ребёнок проявляет и раскрывает себя, развивает
+                                индивидуальные особенности и таланты.
                             </p>
 
-                            <form id="consulting-form" class="consulting-form">
-                                <input
-                                    type="tel"
-                                    name="consulting-phone"
-                                    class="consulting-phone"
-                                    placeholder="Телефон"
-                                    required
-                                />
-                                <input
-                                    type="submit"
-                                    name="consulting-submit"
-                                    class="consulting-submit"
-                                    value="отправить"
-                                />
-
-                                <div class="checkbox-container">
-                                    <div class="checkbox">
-                                        <input
-                                            id="form-consulting-checkbox"
-                                            type="checkbox"
-                                            class="input-checkbox"
-                                            name="consulting-checkbox"
-                                            aria-label="Чекбокс согласия с условиями"
-                                            required
-                                        />
-
-                                        <label
-                                            class="custom-checkbox"
-                                            for="form-consulting-checkbox"
-                                        ></label>
-                                    </div>
-
-                                    <span class="agree"
-                                        >Я принимаю условия пользовательского
-                                        соглашения</span
-                                    >
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="image-holder"></div>
-
-                        <div class="bg-holder"></div>
-                    </div>
-                </section>
-
-                <section class="extra-service">
-                    <h3 class="section-title">Дополнительные услуги</h3>
-
-                    <div class="services-container">
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title">Йога</span>
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Монтессори группа с уникальным древесинным
-                                оборудованием</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title">Гольф для малышей</span>
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title">Занятия с беговелами</span>
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Легостроение и конструирование</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Тестопластика и глинопластика</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Риторика и ораторское мастерство</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title">Занятия по скалолазанию</span>
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Театрализация на английском языке</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Кулинария и этикет сервисного стола</span
-                            >
-                        </div>
-
-                        <div class="service">
-                            <div class="icon"></div>
-                            <span class="title"
-                                >Песочная терапия. Работа на интерактивных
-                                столах и досках</span
-                            >
-                        </div>
-                    </div>
-                </section>
-
-                <section class="advantage">
-                    <h3 class="section-title">Преимущества</h3>
-                    <p class="section-subtitle">
-                        Наша авторская программа ведется на русском и английском
-                        языках и состоит из увлекательных мероприятий
-                    </p>
-
-                    <div class="advantage-container">
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Мастер-классы</span>
-                        </div>
-
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Игры-квесты</span>
-                        </div>
-
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Конференции и проекты</span>
-                        </div>
-
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Опыты и эксперименты</span>
-                        </div>
-
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Концерты и спектакли</span>
-                        </div>
-
-                        <div class="adv">
-                            <div class="icon"></div>
-                            <span class="title">Соревнования</span>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="consulting-second">
-                    <div class="consulting-content">
-                        <div class="content-left">
-                            <h4 class="title">
-                                Есть вопросы? Получите бесплатную консультацию
-                            </h4>
-                            <p class="paragraph">
-                                Оставьте телефон и мы перезвоним и расскажем все
-                                подробности о филиале
+                            <p class="about-mission">
+                                Наша задача — сделать так, чтобы каждый день в
+                                Kids story был счастливым.
                             </p>
 
-                            <form
-                                id="consulting-second-form"
-                                class="consulting-form"
-                            >
-                                <input
-                                    type="tel"
-                                    name="second-consulting-phone"
-                                    class="consulting-phone"
-                                    placeholder="Телефон"
-                                    required
-                                />
-                                <input
-                                    type="submit"
-                                    name="consulting-submit"
-                                    class="consulting-submit"
-                                    value="отправить"
-                                />
-
-                                <div class="checkbox-container">
-                                    <div class="checkbox">
-                                        <input
-                                            id="form-consulting-second-checkbox"
-                                            type="checkbox"
-                                            class="input-checkbox"
-                                            name="consulting-checkbox"
-                                            aria-label="Чекбокс согласия с условиями"
-                                            required
-                                        />
-
-                                        <label
-                                            class="custom-checkbox"
-                                            for="form-consulting-second-checkbox"
-                                        ></label>
-                                    </div>
-
-                                    <span class="agree"
-                                        >Я принимаю условия пользовательского
-                                        соглашения</span
-                                    >
-                                </div>
-                            </form>
+                            <ul class="about-list">
+                                <li class="list-elem">
+                                    Английский детский клуб. Для детей с 2 до 7
+                                    лет. Погружение в языковую среду,
+                                    собственная кухня, охраняемая огороженная
+                                    территория, медицинский кабинет, соляная
+                                    пещера.
+                                </li>
+                                <li class="list-elem">
+                                    Дополнительные услуги. Для детей с 2 до 18
+                                    лет. Развивающие студии, творческие
+                                    мастерские, спортивные секции.
+                                </li>
+                                <li class="list-elem">
+                                    Kids story - &laquo;ежедневное развитие
+                                    детей на 360 градусов&raquo;.
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="image-holder"></div>
-
-                        <div class="bg-holder"></div>
                     </div>
-                </section>
-
-                <section class="about">
-                    <h3 class="about-title">О нашем центре</h3>
-                    <p class="about-subtitle">
-                        Мы создали пространство, в котором каждый ребёнок
-                        проявляет и раскрывает себя, развивает индивидуальные
-                        особенности и таланты.
-                    </p>
-
-                    <p class="about-mission">
-                        Наша задача — сделать так, чтобы каждый день в Kids
-                        story был счастливым.
-                    </p>
-
-                    <ul class="about-list">
-                        <li class="list-elem">
-                            Английский детский клуб. Для детей с 2 до 7 лет.
-                            Погружение в языковую среду, собственная кухня,
-                            охраняемая огороженная территория, медицинский
-                            кабинет, соляная пещера.
-                        </li>
-                        <li class="list-elem">
-                            Дополнительные услуги. Для детей с 2 до 18 лет.
-                            Развивающие студии, творческие мастерские,
-                            спортивные секции.
-                        </li>
-                        <li class="list-elem">
-                            Kids story - &laquo;ежедневное развитие детей на 360
-                            градусов&raquo;.
-                        </li>
-                    </ul>
                 </section>
             </main>
 
@@ -1241,6 +749,6 @@
 
         <div class="overlay"></div>
 
-        <script src="assets/js/main.js" type="module"></script>
+        <script src="assets/js/about.js" type="module"></script>
     </body>
 </html>

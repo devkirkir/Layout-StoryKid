@@ -287,7 +287,7 @@ body .wrapper header .header-bottom .btn-enroll:active {
 body .wrapper header .header-dropdown {
   display: none;
   position: absolute;
-  top: 95px;
+  top: 84px;
   left: 0;
   width: 100%;
   background-color: #8081bd;
@@ -1342,18 +1342,56 @@ body .wrapper main .advantage .advantage-container .adv:nth-child(6) .icon {
     text-align: center;
   }
 }
+body .wrapper main .about-centre {
+  max-width: 1420px;
+  min-width: 280px;
+  padding: 0 15px;
+  margin: 40px auto;
+  margin-bottom: 60px;
+}
+body .wrapper main .about-centre .about-center-title {
+  font-size: 32px;
+  color: #8081bd;
+  margin-bottom: 35px;
+}
+body .wrapper main .about-centre .container {
+  display: flex;
+}
+body .wrapper main .about-centre .container .about-img {
+  margin-right: 30px;
+}
+body .wrapper main .about-centre .container .about {
+  margin: 0;
+}
+body .wrapper main .about-centre .container .about .about-title {
+  margin-bottom: 30px;
+}
+body .wrapper main .about-centre .container .about .about-boss {
+  margin-bottom: 30px;
+}
+body .wrapper main .about-centre .container .about .about-boss .name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #8081bd;
+  margin-bottom: 10px;
+}
+body .wrapper main .about-centre .container .about .about-boss span {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+}
 body .wrapper main .about {
   max-width: 1420px;
   min-width: 280px;
   padding: 0 15px;
   margin: 80px auto;
 }
-body .wrapper main .about .section-title {
+body .wrapper main .about .about-title {
   font-size: 32px;
   color: #8081bd;
   margin-bottom: 15px;
 }
-body .wrapper main .about .section-subtitle {
+body .wrapper main .about .about-subtitle {
   color: #334155;
   margin-bottom: 30px;
 }
@@ -1373,13 +1411,41 @@ body .wrapper main .about .about-list .list-elem {
 body .wrapper main .about .about-list .list-elem:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 1024px) {
+  body .wrapper main .about-centre .container {
+    flex-direction: column;
+  }
+  body .wrapper main .about-centre .container .about-img {
+    margin: 0 auto 20px;
+  }
+  body .wrapper main .about-centre .container .about .about-title {
+    text-align: center;
+  }
+  body .wrapper main .about-centre .container .about .about-boss {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 560px) {
   body .wrapper main .about {
     padding: 0 10px;
     font-size: 14px;
   }
-  body .wrapper main .about .section-title {
+  body .wrapper main .about .about-title,
+body .wrapper main .about .about-center-title {
     font-size: 24px;
+  }
+  body .wrapper main .about-centre {
+    margin: 20px 0;
+  }
+  body .wrapper main .about-centre .container .about-img img {
+    width: 240px;
+    height: 220px;
+  }
+  body .wrapper main .about-centre .container .about .about-title {
+    text-align: center;
+  }
+  body .wrapper main .about-centre .container .about .about-boss {
+    text-align: center;
   }
 }
 body .wrapper .map {
