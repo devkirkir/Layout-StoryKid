@@ -16,6 +16,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   overflow: hidden;
 }
@@ -1464,6 +1472,26 @@ body .wrapper main .video-gallery .video-container {
   display: flex;
   gap: 20px;
 }
+body .wrapper main .video-gallery .video-container .hidden-video {
+  position: fixed;
+  display: none;
+  z-index: 11;
+}
+body .wrapper main .video-gallery .video-container .hidden-video iframe {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  animation: fadeIn 0.3s linear;
+}
+body .wrapper main .video-gallery .video-container .hidden-video-show {
+  display: block;
+}
+body .wrapper main .video-gallery .video-container .hidden-video-show iframe {
+  animation: fadeIn 0.3s linear;
+}
 body .wrapper main .video-gallery .video-container .video {
   position: relative;
   flex: 1;
@@ -1533,6 +1561,15 @@ body .wrapper main .video-gallery .video-container .video:nth-child(3) {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+body .wrapper main .video-gallery .video-container .open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   body .wrapper main .video-gallery .section-title {
@@ -1862,6 +1899,17 @@ body .overlay {
   background-color: rgba(128, 129, 189, 0.7);
   z-index: 9;
   transition: 0.3s;
+  animation: fadeIn 0.3s;
+}
+body .overlay .close-overlay {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
 }
 body .success-message,
 body .error-message {
@@ -1882,6 +1930,7 @@ body .error-message {
   opacity: 0;
   z-index: 11;
   transition: 0.3 linear;
+  animation: fadeIn 0.3s;
 }
 body .success-message .close-status,
 body .error-message .close-status {
@@ -1907,6 +1956,14 @@ body .error-message__title {
 body .success-message__subtext,
 body .error-message__subtext {
   font-size: 14px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 button {

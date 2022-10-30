@@ -11,6 +11,30 @@
     display: flex;
     gap: 20px;
 
+    .hidden-video {
+      position: fixed;
+      display: none;
+      z-index: 11;
+
+      iframe {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        animation: fadeIn 0.3s linear;
+      }
+    }
+
+    .hidden-video-show {
+      display: block;
+
+      iframe {
+        animation: fadeIn 0.3s linear;
+      }
+    }
+
     .video {
       position: relative;
       flex: 1;
@@ -82,6 +106,16 @@
           background-repeat: no-repeat;
         }
       }
+    }
+
+    .open {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      z-index: 10;
     }
   }
 }

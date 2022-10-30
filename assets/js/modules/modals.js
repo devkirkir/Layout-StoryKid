@@ -9,17 +9,6 @@ const modals = () => {
     function toggleOverlay(isOpen) {
       if (isOpen) {
         overlay.style.display = "block";
-        overlay.animate(
-          [
-            {
-              opacity: 0,
-            },
-            { opacity: 1 },
-          ],
-          {
-            duration: 300,
-          }
-        );
       } else {
         overlay.style.display = "none";
       }
