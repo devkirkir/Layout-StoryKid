@@ -1,8 +1,4 @@
 .extra-service {
-  // max-width: $maxWidth;
-  // min-width: $minWidth;
-  // padding: 0 20px;
-  // margin: 60px auto;
   @include section(80px);
 
   .section-title {
@@ -15,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px 30px;
 
     .service {
       display: flex;
@@ -23,7 +20,6 @@
       min-width: 260px;
       height: 100px;
       background-color: $peach;
-      margin: 10px;
       border-radius: 10px;
 
       .icon {
@@ -42,6 +38,7 @@
         width: 100%;
         text-align: center;
         color: $darkblue;
+        margin: 0 5px;
       }
 
       &:nth-child(1) {
