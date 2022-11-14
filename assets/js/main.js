@@ -5,32 +5,30 @@ import loader from "./modules/loader.js";
 import modals from "./modules/modals.js";
 import phoneValid from "./modules/phoneValid.js";
 import slider from "./modules/slider.js";
+import video from "./modules/video.js";
 
 window.onload = () => {
-    loader(".loader");
+  loader(".loader");
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-    dropdownMenu();
+  dropdownMenu();
 
-    hiddenMenu(".burger", ".header-hidden-menu", ".hidden-menu-close-btn");
+  hiddenMenu(".burger", ".header-hidden-menu", ".hidden-menu-close-btn");
 
-    modals();
+  modals();
 
-    forms("#enroll-form", true);
-    forms("#banner-enroll-form", false);
-    forms("#consulting-form", false);
-    forms("#consulting-second-form", false);
+  forms("#enroll-form", true);
+  forms("#banner-enroll-form", false);
+  forms("#consulting-form", false);
+  forms("#consulting-second-form", false);
 
-    phoneValid("input[name=enroll-phone]");
-    phoneValid("input[name=banner-enroll-phone]");
-    phoneValid("input[name=consulting-phone]");
-    phoneValid("input[name=second-consulting-phone]");
+  phoneValid("input[name=enroll-phone]");
+  phoneValid("input[name=banner-enroll-phone]");
+  phoneValid("input[name=consulting-phone]");
+  phoneValid("input[name=second-consulting-phone]");
 
-    slider(
-        ".banner-slides",
-        ".banner-slide",
-        ".banner-slider-prev-btn",
-        ".banner-slider-next-btn"
-    );
+  //   video(".video");
+
+  slider(".banner-slides", ".banner-slide", ".banner-slider-prev-btn", ".banner-slider-next-btn");
 });
